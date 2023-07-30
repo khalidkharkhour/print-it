@@ -23,14 +23,14 @@ function escapeHtmlEntities(input) {
               .replace(/"/g, "&quot;").replace(/'/g, "&#39;")
 }
 // Écouteur d'événement pour la flèche gauche en jQuery
-$(".arrowleft").on("click", function() {
+document.querySelector(".arrowleft").addEventListener("click", function() {
   console.log("Flèche gauche cliquée")
   changeSlide("prev")
 });
 // Écouteur d'événement pour la flèche droite en jQuery
-$(".arrowright").on("click", function() {
-  console.log("Flèche droite cliquée")
-  changeSlide("next")
+document.querySelector(".arrowright").addEventListener("click", function() {
+  console.log("Flèche gauche cliquée")
+  changeSlide("prev")
 });
 // Variable pour garder la trace de l'index de la diapositive actuelle
 let currentSlideIndex = 0
