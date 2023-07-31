@@ -1,8 +1,5 @@
 // Tableau contenant les diapositives du carrousel
-
-/*const { Carousel } = require("bootstrap")
-
-/*const slides = [
+const slides = [
   {
     "image": "slide1.jpg",
     "tagLine": "Impressions tous formats <span>en boutique et en ligne</span>"
@@ -20,6 +17,7 @@
     "tagLine": "Autocollants <span>avec découpe laser sur mesure</span>"
   }
 ]
+
 // Fonction pour échapper les caractères spéciaux HTML
 function escapeHtmlEntities(input) {
   return input.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -61,38 +59,6 @@ function changeSlide(direction) {
       dot.classList.remove("dot_selected")
     }
   })
-} */
-const { Carousel } = require("bootstrap")
-function carrousel (images){
-  if(!Array.isArray(images))
-  console.log("Error :Images must be array")
-  return
 }
-if (images.length === 0){
-  console.error("Error :Images array is empty")
-}
-for (let i = 0
-  i < images.length
-  i++){
-    console.log{'Diplaying image ${i+1}':${images[i]}
-  }
-  }
-  const imageUrls = [
-    {
-      "image": "slide1.jpg",
-      "tagLine": "Impressions tous formats <span>en boutique et en ligne</span>"
-    },
-    {
-      "image": "slide2.jpg",
-      "tagLine": "Tirages haute définition grand format <span>pour vos bureaux et événements</span>"
-    },
-    {
-      "image": "slide3.jpg",
-      "tagLine": "Grand choix de couleurs <span>de CMJN aux pantones</span>"
-    },
-    {
-      "image": "slide4.png",
-      "tagLine": "Autocollants <span>avec découpe laser sur mesure</span>"
-    }
-  ]
-  Carousel(imageUrls)
+
+
