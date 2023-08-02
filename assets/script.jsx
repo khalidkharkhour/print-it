@@ -3,23 +3,6 @@ function escapeHtmlEntities(input) {
   return input.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
               .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
-/// Créer un conteneur pour les points
-const dotsContainer = document.createElement('div');
-dotsContainer.className = 'dots';
-
-// Créer les éléments de points individuels et les ajouter au conteneur de points
-for (let i = 0; i < 4; i++) {
-  const dot = document.createElement('div');
-  dot.className = 'dot';
-  dotsContainer.appendChild(dot);
-}
-
-// Obtenir l'élément 'banner' par son ID
-const bannerElement = document.getElementById('banner');
-
-// Ajouter le conteneur de points à l'élément 'banner'
-bannerElement.appendChild(dotsContainer);
-
 
 // Écouteur d'événement pour la flèche gauche en jQuery
 $(".arrowleft").on("click", function() {
@@ -60,5 +43,4 @@ function changeSlide(direction) {
     }
   });
 }
-
 
