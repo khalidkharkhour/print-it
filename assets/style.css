@@ -295,3 +295,33 @@ footer div {
 		flex: 2;
 	}
 }
+
+@media (max-width: 768px) {
+
+	
+	#banner p {
+	  font-size: large;
+	  line-height: 32px;
+	}
+  
+	
+	header {
+	  flex-direction: column;
+	  text-align: center;
+	  padding: 10px 0;
+	}
+  
+	.logo {
+	  margin: 10px 0;
+	}
+  
+	
+	.btn {
+	  padding: 8px 16px;
+	  font-size: 14px;
+	}
+	#banner .arrow {
+		width: 5%;
+		
+	}
+}
