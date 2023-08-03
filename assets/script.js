@@ -1,9 +1,14 @@
-// Fonction pour échapper les caractères spéciaux HTML
+/**
+ * Échappe les caractères spéciaux HTML dans une chaîne de texte.
+ * @param {string} input - La chaîne de texte à échapper.
+ * @returns {string} - La chaîne de texte échappée.
+ */
 function escapeHtmlEntities(input) {
   return input.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
               .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
-/// Créer un conteneur pour les points
+
+// Créer un conteneur pour les points
 const dotsContainer = document.createElement('div');
 dotsContainer.className = 'dots';
 
@@ -20,7 +25,6 @@ const bannerElement = document.getElementById('banner');
 // Ajouter le conteneur de points à l'élément 'banner'
 bannerElement.appendChild(dotsContainer);
 
-
 // Écouteur d'événement pour la flèche gauche en jQuery
 $(".arrowleft").on("click", function() {
   console.log("Flèche gauche cliquée");
@@ -36,7 +40,10 @@ $(".arrowright").on("click", function() {
 // Variable pour garder la trace de l'index de la diapositive actuelle
 let currentSlideIndex = 0;
 
-// Fonction pour changer l'image et le texte dans le carrousel
+/**
+ * Change l'image et le texte dans le carrousel en fonction de la direction.
+ * @param {string} direction - La direction de la diapositive ("prev" pour précédent, "next" pour suivant).
+ */
 function changeSlide(direction) {
   // Incrémenter ou décrémenter l'index de la diapositive actuelle en fonction de la direction
   if (direction === "prev") {
@@ -60,5 +67,3 @@ function changeSlide(direction) {
     }
   });
 }
-
-
